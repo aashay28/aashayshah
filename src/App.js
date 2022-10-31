@@ -28,11 +28,11 @@ function App() {
       <Router>
         <ScrollToTop />
         <Switch>
-          <Route path='/' exact component={Main} />
+          <Route path='/aashayshah' exact component={Main} />
           <Route path='/blog' exact component={BlogPage} />
           <Route path='/projects' exact component={ProjectPage} />
 
-          <Redirect to='/' />
+          <Redirect to='/aashayshah' />
         </Switch>
       </Router>
       <BackToTop />
