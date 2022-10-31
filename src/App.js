@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -25,14 +25,15 @@ function App() {
 
   return (
     <div className='app'>
-      <Router>
+      <Router basename=''>
         <ScrollToTop />
         <Switch>
           <Route path='/' exact component={Main} />
+          <Route path='/aashayshah' exact component={Main} />
           <Route path='/blog' exact component={BlogPage} />
           <Route path='/projects' exact component={ProjectPage} />
 
-          <Redirect to='/' />
+          <Redirect to='/aashayshah' />
         </Switch>
       </Router>
       <BackToTop />
