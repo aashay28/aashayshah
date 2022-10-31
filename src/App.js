@@ -22,12 +22,12 @@ function App() {
   //   `color:${theme.tertiary}; font-size:20px`
   // );
   // console.log = console.warn = console.error = () => {};
-  // useEffect(() => {
-  //   window.location.href = "https://aashay28.github.io/aashayshah";
-  // }, []);
+  useEffect(() => {
+    window.location.href = "https://aashay28.github.io/aashayshah";
+  }, []);
   return (
     <div className='app'>
-      <Router basename='/aashayshah'>
+      <Router>
         <ScrollToTop />
         <Switch>
           <Route path='/' exact component={Main} />
