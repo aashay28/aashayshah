@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,13 +15,6 @@ import "./App.css";
 
 function App() {
   const { theme } = useContext(ThemeContext);
-
-  // console.log("%cAASHAY PORTFOLIO", `color:${theme.primary}; font-size:50px`);
-  // console.log(
-  //   "%chttps://github.com/hhhrrrttt222111/developer-portfolio",
-  //   `color:${theme.tertiary}; font-size:20px`
-  // );
-  // console.log = console.warn = console.error = () => {};
 
   return (
     <div className='app'>
