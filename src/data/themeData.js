@@ -18,7 +18,6 @@ import {
   yellowThemeDark,
 } from "../theme/theme";
 const items = [
-  bwThemeLight,
   blueThemeLight,
   blueThemeDark,
   orangeThemeLight,
